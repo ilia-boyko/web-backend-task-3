@@ -36,11 +36,11 @@ if ( empty($_POST['sex']) ) {
 
 switch($_POST['sex']) {
     case 'male': {
-        $sex='male';
+        $sex='m';
         break;
     }
     case 'female':{
-        $sex='female';
+        $sex='f';
         break;
     }
 };
