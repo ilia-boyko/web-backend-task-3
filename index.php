@@ -99,7 +99,7 @@ $pass = '6518561';
 $db = new PDO('mysql:host=localhost;dbname=u47534', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
 
 try {
-    $stmt = $db->prepare("INSERT INTO application SET name = ?, email = ?, birth = ? ,sex = ?, limbs = ?, bessm = ?, passing = ? ,fly =?, biography = ?, agree = ?");
+    $stmt = $db->prepare("INSERT INTO application SET name = ?, email = ?, birth = ? ,sex = ?, limbs = ?, undeath = ?, walls = ? ,levitation =?, bio = ?, agree = ?");
     $stmt -> execute(array($_POST['name'],$_POST['email'],$_POST['birth'],$sex,$limbs,$power1,$power2,$power3,$_POST['bio'], $agree));
 }
 catch(PDOException $e){
